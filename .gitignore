@@ -1,0 +1,7 @@
+poetry.lock
+__pycache__
+.breakpoints
+.replit
+db.sqlite3
+pyproject.toml
+requirements.txt
