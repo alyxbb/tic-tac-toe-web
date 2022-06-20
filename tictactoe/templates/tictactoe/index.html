@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9549518907556462"
+     crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{% static '950317206988812348/style.css' %}">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tic tac toe</title>
+</head>
+
+<body>
+
+    <p>welcome to alyxbb.tech, as I have not got around to making a homepage yet, please enjoy this tic tac toe game i made using the python, django,django channels, css, html, js,</p>
+    <p id="errorbar"></p>
+	<h1>tic tac toe game</h1>
+	<div id="playerselector">
+
+		<input type="radio", id="2player", value="2", name="playercount">
+        <label for="2player">2 player</label><br>
+        <input type="radio", id="1player", value="1", name="playercount">
+        <label for="1player">1 player</label>
+        <br>
+        <input type="submit", id="playersubmit">
+
+</div>
+<div id="gamegrid" style="display: none;">
+  <p id="goindicator"></p>
+  <table id="table">
+      <tr>
+          <td id="table0"></td>
+          <td id="table1"></td>
+          <td id="table2"></td>
+      </tr>
+      <tr>
+          <td id="table3"></td>
+          <td id="table4"></td>
+          <td id="table5"></td>
+      </tr>
+      <tr>
+          <td id="table6"></td>
+          <td id="table7"></td>
+          <td id="table8"></td>
+      </tr>
+  </table>
+  <div id="scorediv">
+      <table>
+          <tr>
+              <td id="xwintext">X wins</td>
+              <td>draws</td>
+              <td id="owintext">O wins</td>
+          </tr>
+          <tr>
+              <td id="X">0</td>
+              <td id="D">0</td>
+              <td id="O">0</td>
+          </tr>
+          
+      </table>
+
+  </div>
+<div id="reload div">
+    <br>
+    <br>
+      <button id="reload" onClick="window.location.reload();">change number of players</button>
+
+</div>
+</div>
+
+
+
+<script type="text/javascript", src="{% static '950317251083513876/websockets.js'%}"></script>
+
+    
+</body>
+</html>
